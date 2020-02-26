@@ -3,7 +3,7 @@
         <v-row align="center" justify="center">
             <v-card flat class="col-8">
                 <v-card-title>
-                    {{article.heading}}
+                    <h1>{{article.title}}</h1>
                 </v-card-title>
                 <v-card-text v-html="article.content"></v-card-text>
             </v-card>
