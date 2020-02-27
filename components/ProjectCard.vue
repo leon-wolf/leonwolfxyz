@@ -1,5 +1,5 @@
 <template>
-    <v-card hover align="left" justify="left" flat class="col-8">
+    <v-card hover align="left" justify="left" flat >
         <v-card-title>
             <img v-if="" class="logo" :src="(project.logo_url != '' && project.logo_url != null) ? (project.logo_url) : ('/logo-placeholder.png')" :alt="project.title">
             {{ project.title }}
