@@ -1,4 +1,5 @@
 # leonwolfxyz
+![Docker Image CI](https://github.com/leon3103/leonwolfxyz/workflows/Docker%20Image%20CI/badge.svg?branch=master)
 
 > My mathematical Nuxt.js project
 
