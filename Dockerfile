@@ -8,8 +8,7 @@ WORKDIR /usr/src/nuxt-app
 RUN rm -rf /var/cache/apk/* && \
     rm -rf /tmp/*
 
-RUN apk add --update --no-cache npm git yarn make \
-    && make build-web
+RUN apk add --update --no-cache npm git yarn make python g++
 
 # copy the app, note .dockerignore
 COPY . /usr/src/nuxt-app/
