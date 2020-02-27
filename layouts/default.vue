@@ -13,10 +13,10 @@
             <v-spacer></v-spacer>
 
             <v-toolbar-items class="hidden-sm-and-down">
-                <nuxt-link class="menu-item-1" text to="/projects">
+                <nuxt-link class="menu-item-1 menu-item" text to="/projects" prefetch :active="$nuxt.$route.path==='/projects'">
                     <v-btn :ripple="false" text>Projekte</v-btn>
                 </nuxt-link>
-                <nuxt-link class="menu-item-3" text to="/blog">
+                <nuxt-link class="menu-item-3 menu-item" text to="/blog" :active="$nuxt.$route.path==='/blog'">
                     <v-btn :ripple="false" text>Blog</v-btn>
                 </nuxt-link>
             </v-toolbar-items>
@@ -85,6 +85,17 @@
 
 <style>
 
+    .nuxt-link-exact-active {
+        text-decoration-line: underline !important;
+    }
+
+    .menu-item {
+        text-decoration: none;
+    }
+
+    .v-btn.v-size--default {
+        font-size: 1rem;
+    }
     .icon-link:hover {
         color: #888888;
     }

@@ -13,8 +13,11 @@
       </div>
       <v-row align="center" justify="center">
         <v-card flat>
-          <v-card-title class="headline typewriter">
-            <h1>Hi. I develop awesome Software.</h1>
+          <v-card-title class="headline typewriter hidden-sm-and-down">
+            <h1>Hi, I'm developing awesome Software.</h1>
+          </v-card-title>
+          <v-card-title align="center" class="hidden-md-and-up" style="word-break: normal">
+            Hi, I'm developing awesome Software.
           </v-card-title>
           <v-card-actions>
             <v-spacer/>
@@ -45,7 +48,10 @@ export default {
 </script>
 
 <style>
+
+
   .typewriter {
+    /*word-wrap: normal;*/
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
