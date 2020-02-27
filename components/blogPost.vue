@@ -1,7 +1,7 @@
 <template>
     <v-card hover flat width="200px" class="blogPost">
         <v-card-title>
-            {{ article.heading }}
+            {{ article.title }}
         </v-card-title>
         <v-card-subtitle>
             {{ article.created_at }}
