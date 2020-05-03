@@ -26,7 +26,7 @@
         name: 'blogPost',
         computed: {
             excerpt: function () {
-                return this.article.content.substring(0, 111) + '...'
+                return this.article.body.substring(0, 111) + '...'
             }
         },
         props: ['article', 'users']

@@ -5,7 +5,7 @@
                 <v-card-title>
                     <h1>{{article.title}}</h1>
                 </v-card-title>
-                <v-card-text v-html="article.content"></v-card-text>
+                <v-card-text v-html="article.body"></v-card-text>
             </v-card>
         </v-row>
     </div>
