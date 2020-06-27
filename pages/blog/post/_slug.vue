@@ -1,10 +1,11 @@
 <template>
     <div>
         <v-row align="center" justify="center">
-            <v-card flat class="col-8">
+            <v-card style="margin-bottom: 30px;" class="col-8">
                 <v-card-title>
                     <h1>{{article.title}}</h1>
                 </v-card-title>
+                <v-card-subtitle>{{new Date(article.created_on).toDateString()}}</v-card-subtitle>
                 <v-card-text v-html="article.body"></v-card-text>
             </v-card>
         </v-row>

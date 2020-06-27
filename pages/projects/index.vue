@@ -27,6 +27,8 @@
         name: 'projects',
         components: {ProjectCard},
         data() {
+            return {
+            }
         },
         async asyncData() {
             let data = await axios.get(
@@ -37,3 +39,5 @@
     }
 </script>
 
+<style scoped lang="css">
+</style>

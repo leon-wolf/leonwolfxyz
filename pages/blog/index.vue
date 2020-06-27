@@ -20,7 +20,7 @@ export default {
   },
   async asyncData() {
     let data = await axios.get(
-      'https://directus.leonwolf.xyz/leonwolfxyz/items/articles?status=published'
+      'https://directus.leonwolf.xyz/leonwolfxyz/items/articles?status=published&fields=*.*'
     )
     return { articles: data.data.data }
   }
