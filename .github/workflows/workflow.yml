@@ -22,6 +22,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        script: |
-        cd $HOME/docker/leonwolfxyz/
-        docker-compose pull && docker-compose down && docker-compose up -d
+        script: cd $HOME/docker/leonwolfxyz/ && docker-compose pull && docker-compose down && docker-compose up -d
