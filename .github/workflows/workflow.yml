@@ -15,11 +15,3 @@ jobs:
         name: leon3103/leonwolfxyz
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-    - name: multiple command
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.KEY }}
-        port: ${{ secrets.PORT }}
-        script: cd $HOME/docker/leonwolfxyz/ && docker-compose pull && docker-compose down && docker-compose up -d
