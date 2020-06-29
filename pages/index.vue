@@ -6,8 +6,7 @@
   >
     <v-flex
       xs12
-      sm8
-      md6
+      md5
     >
       <div class="text-center">
       </div>
