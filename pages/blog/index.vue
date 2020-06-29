@@ -1,7 +1,8 @@
 <template>
   <v-container fill-height fluid>
-    <v-row align="center" justify="center" class="col-8">
+    <v-row align="center" justify="center" class="">
       <blog-post
+          class="blogPost"
         v-for="article in articles"
         v-bind:key="article.slug"
         :article="article"
@@ -26,3 +27,8 @@ export default {
   }
 }
 </script>
+<style>
+  .blogPost {
+    min-width: 200px;
+  }
+</style>
