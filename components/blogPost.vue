@@ -39,7 +39,7 @@
   .blogPost {
     margin: 10px;
     cursor: default;
-    min-width: 10%;
+    min-width: 200px;
     max-width: 20%;
   }
 
