@@ -1,14 +1,14 @@
 <template>
-  <v-card outlined width="15%" class="blogPost hoverShadow">
+  <v-card class="blogPost hoverShadow" outlined>
     <img
-        class="blogPostImage"
-        :alt="article.title"
-        :src="article.head_img.data.full_url"
-        v-if="article.head_img !== null"
+      :alt="article.title"
+      :src="article.head_img.data.full_url"
+      class="blogPostImage"
+      v-if="article.head_img !== null"
     />
-    <v-card-title>
-      {{ article.title }}
-    </v-card-title>
+    <template>
+      <h1 class="card-title">{{article.title}}</h1>
+    </template>
     <v-card-subtitle>
       {{ article.created_at }}
     </v-card-subtitle>
@@ -25,15 +25,15 @@
 </template>
 
 <script>
-    export default {
-        name: 'blogPost',
-        computed: {
-            excerpt: function () {
-                return this.article.subtitle
-            }
-        },
-        props: ['article', 'users']
-    }
+  export default {
+    name: 'blogPost',
+    computed: {
+      excerpt: function () {
+        return this.article.subtitle
+      }
+    },
+    props: ['article', 'users']
+  }
 </script>
 <style>
   .blogPost {
@@ -41,11 +41,13 @@
     cursor: default;
     min-width: 200px;
     max-width: 20%;
+    text-align: justify;
   }
 
   .blogPostImage {
     max-height: 200px;
     width: 100%;
+    object-fit: cover;
   }
 
   .hoverShadow {
@@ -56,5 +58,22 @@
   .hoverShadow:hover {
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12) !important;
     transition: all 0.3s ease-in-out;
+  }
+
+
+  .card-title {
+    margin: auto;
+    width: auto;
+    padding: 0 16px 0 16px;
+    align-items: center;
+    hyphens: auto;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
   }
 </style>

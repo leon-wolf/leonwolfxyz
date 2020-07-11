@@ -17,24 +17,24 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: {color: '#fff'},
+  /*
+   ** Nuxt.js dev-modules
+   */
+  buildModules: ['@nuxtjs/vuetify', '@nuxtjs/color-mode'],
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/main.css'],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: ['@/plugins/filter.js', '@/plugins/axios.js'],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: ['@nuxtjs/vuetify'],
   /*
    ** Nuxt.js modules
    */
