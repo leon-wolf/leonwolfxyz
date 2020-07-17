@@ -15,14 +15,14 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
-      }
+      },
     ],
-    link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: {color: '#fff'},
+  loading: { color: '#fff' },
   /*
    ** Nuxt.js dev-modules
    */
@@ -39,7 +39,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    'nuxt-matomo', { matomoUrl: '//matomo.leonwolf.xyz/', siteId: 1 }
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/pwa'
   ],
@@ -76,6 +75,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   }
 }
