@@ -23,6 +23,9 @@ export default {
       'https://directus.leonwolf.xyz/leonwolfxyz/items/articles?status=published&fields=*.*'
     )
     return { articles: data.data.data }
+  },
+  head () {
+    return {title: 'Blog'}
   }
 }
 </script>

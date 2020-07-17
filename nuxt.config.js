@@ -39,6 +39,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    'nuxt-matomo', { matomoUrl: '//matomo.leonwolf.xyz/', siteId: 1 }
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/pwa'
   ],

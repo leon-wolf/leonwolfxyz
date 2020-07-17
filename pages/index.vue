@@ -42,6 +42,9 @@ export default {
   components: {
     Logo,
     VuetifyLogo
+  },
+  head () {
+    return {title: 'Moin!'}
   }
 }
 </script>

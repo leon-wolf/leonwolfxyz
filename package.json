@@ -13,10 +13,11 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.9.3",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/vuetify": "^1.0.0",
     "axios": "^0.19.2",
-    "nuxt": "^2.0.0",
     "minimist": "^1.2.3",
-    "@nuxtjs/vuetify": "^1.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-matomo": "^1.2.3"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.0.0",

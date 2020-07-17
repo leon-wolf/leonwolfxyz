@@ -14,7 +14,7 @@
           prefetch
           :active="$nuxt.$route.path === '/projects'"
         >
-          <v-btn :ripple="false" text>Projekte</v-btn>
+          <v-btn :ripple="false" text>Projects</v-btn>
         </nuxt-link>
         <nuxt-link
           class="menu-item-3 menu-item"

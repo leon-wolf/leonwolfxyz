@@ -28,6 +28,9 @@
       );
       return {article: data.data.data}
     },
+    head () {
+      return {title: this.article.title}
+    },
     mounted: function () {
       console.info("now");
       console.info(this.$refs['text'].getElementsByTagName('img'));

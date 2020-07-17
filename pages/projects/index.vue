@@ -30,6 +30,9 @@
             return {
             }
         },
+      head () {
+        return {title: 'Projects'}
+      },
         async asyncData() {
             let data = await axios.get(
                 'https://directus.leonwolf.xyz/leonwolfxyz/items/projects?status=published'
