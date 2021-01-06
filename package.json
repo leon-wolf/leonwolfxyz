@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.9.3",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@nuxtjs/vuetify": "^1.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "minimist": "^1.2.3",
     "nuxt": "^2.0.0"
   },
